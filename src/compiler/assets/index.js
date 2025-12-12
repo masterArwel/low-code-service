@@ -1,9 +1,7 @@
 ;(function () {
   var API_HOSTS = {
-    fat: 'https://fat-marketingapi.hellobike.com/api',
-    uat: 'https://uat-marketingapi.hellobike.com/api',
-    pre: 'https://pre-marketingapi.hellobike.com/api',
-    pro: 'https://marketingapi.hellobike.com/api',
+    fat: 'xxx.com/api',
+    pro: 'xxx.com/api',
   }
   function detectEnv() {
     try {

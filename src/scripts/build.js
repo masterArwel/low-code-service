@@ -1,4 +1,4 @@
-const { build } = require('@hb/lowcode-compiler');
+const { build } = require('../compiler');
 
 process.on('message', async (message) => {
   try {
