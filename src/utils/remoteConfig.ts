@@ -1,7 +1,6 @@
 
-import ServerSDK from '@hb/wisdom-config-sdk/lib/server'
 import { env } from '../config';
-
+const ServerSDK = {};
 export const remoteConfig = new ServerSDK({
   project: 'AppLowCodeCompileService',
   env: env,
