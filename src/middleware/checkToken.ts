@@ -4,14 +4,28 @@ import { UserInfo } from '../types';
 
 let soaInstance: any;
 
-const soa = {};
+const soa = {
+  request: async (params: any) => {
+    return {
+      code: 200,
+      resultJson: JSON.stringify({
+        errorCode: 200,
+        data: { userName: 'test' },
+      }),
+    };
+  },
+  init: async (params: any) => {
+    return soa;
+  },
+};
 async function getUserInfoByToken(token: string) {
   const ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36';
 
+  // 调用服务获取用户信息
   const res = await soa.request({
-    iface: 'com.hellobike.uniform.access.iface.PivotAccessAuthServiceIface',
-    method: 'checkToken',
-    service: 'AppPivotUniformAccessCenter',
+    iface: '',
+    method: '',
+    service: '',
     data: [ua, token],
   });
   if (res?.code === 200 && res?.resultJson) {

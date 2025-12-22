@@ -140,5 +140,5 @@ export const uploadTemplate = async ({
     throw new Error(`${targetPath} 已存在`)
   }
   await uploadFiles(rootPath, targetPath)
-  return `https://m.hellobike.com/${targetPath}`
+  return `https://m.xx-app.com/${targetPath}`
 }

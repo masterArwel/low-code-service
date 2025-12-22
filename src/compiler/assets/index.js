@@ -37,8 +37,8 @@
     if (loader && loader.parentNode) loader.parentNode.removeChild(loader)
   }
   function parseGuidAndPreview() {
-    // 预览的链接：https://m.hellobike.com/ls/7349630240455655442/fat/latest/index.html
-    // 发布的链接：https://m.hellobike.com/ls/publish_7349630240455655442/fat/latest/index.html
+    // 预览的链接：https://m.xxx-app.com/ls/7349630240455655442/fat/latest/index.html
+    // 发布的链接：https://m.xxx-app.com/ls/publish_7349630240455655442/fat/latest/index.html
     try {
       var seg = (location.pathname || '').split('/').filter(Boolean)
       // path: /ls/{id}/{env}/latest/index.html

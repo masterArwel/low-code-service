@@ -82,7 +82,7 @@ export const getCurrentTemplateInfo = async ({
 /**
  * 下载模板
  * 
- * 目标目录为： https://m.hellobike.com/lowcode-templates/<namespace>/<version>
+ * 目标目录为： https://m.xxx-app.com/lowcode-templates/<namespace>/<version>
  */
 export const downloadTemplates = async ({
   namespace,
@@ -151,7 +151,7 @@ export const downloadAndInstallTemplate = async ({
 /**
  * 检查并同步最新模板
  * 
- * 动态获取最新模板版本配置：https://config.hellobike.cn/#/project/detail?projectGuid=38f0104d8ea64363b37957ff035a8643&projectName=AppLowCodeCompileService
+ * 动态获取最新模板版本配置：https://config.xxx-app.cn/#/project/detail?projectGuid=38f0104d8ea64363b37957ff035a8643&projectName=AppLowCodeCompileService
  * 获取template字段，例如：{ latestTemplateVersion: '1.0.0' }，则同步最新版本为1.0.0
  */
 export const checkAndSyncLatestTemplate = async ({

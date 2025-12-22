@@ -85,9 +85,9 @@ export const uploadToOss = async ({
   }), 4)
 
   if (env === 'pro') {
-    return `https://m.hellobike.com/ls/${meta.project_name}/latest/index.html`
+    return `https://m.xxx-app.com/ls/${meta.project_name}/latest/index.html`
   }
-  return `https://m.hellobike.com/ls/${meta.project_name}/${env}/latest/index.html`
+  return `https://m.xxx-app.com/ls/${meta.project_name}/${env}/latest/index.html`
 };
 
 // 上传日志文件
@@ -100,7 +100,7 @@ export const uploadLogFile = async (
     const logFileName = `build-${env}-${meta.appVersion}-${Date.now()}.log`
     if (existsSync(logFileTargetPath)) {
       await doUpload(logFileTargetPath, `/ls/${meta.project_name}/${logFileName}`)
-      return `https://m.hellobike.com/ls/${meta.project_name}/${logFileName}`
+      return `https://m.xxx-app.com/ls/${meta.project_name}/${logFileName}`
     }
     logger.log(`编译日志文件不存在: ${logFileTargetPath}`)
     return ''
